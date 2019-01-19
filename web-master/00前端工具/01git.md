@@ -30,16 +30,19 @@ GitHub 仓库下载到本地
 --------------------- 
 #####阶段一：VCS 出现前 
 用目录拷贝区别不同版本，公共⽂文件容易被覆盖，成员沟通成本很高，代码集成效率低下
+
 ![VCS 出现前.png](https://upload-images.jianshu.io/upload_images/6299738-24a9ad81dc0f10e7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/140)
 
 #####阶段二：集中式 VCS
 有集中的版本管理服务器，具备文件版本管理和分⽀管理能力，集成效率有明显地提高，但是客户端必须时刻和服务器相连
+
 ![集中式 VCS.png](https://upload-images.jianshu.io/upload_images/6299738-127ef386f52d0cc5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
 
 #####阶段三：分布式 VCS 
 服务端和客户端都有完整的版本库，脱离服务端，客户端照样可以管理理版本
 查看历史和版本⽐比较等多数操作，都不需 要访问服务器，⽐集中式 VCS 更更能提高版本管理效率
-  ![分布式 VCS.png](https://upload-images.jianshu.io/upload_images/6299738-3905fa2345d89ee1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
+
+![分布式 VCS.png](https://upload-images.jianshu.io/upload_images/6299738-3905fa2345d89ee1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
 
 ### 二： git  简介 
 --------------------- 
@@ -121,6 +124,7 @@ git config --global core.editor "vim"
 
 ![image.png](https://upload-images.jianshu.io/upload_images/6299738-5eb052bce391489c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/440)
 
+
 ![生成文件.png](https://upload-images.jianshu.io/upload_images/6299738-3b24690ab570d7b6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/440)
 
 6.运行 git status -sb 可以看到文件前面有 ?? 号
@@ -147,6 +151,7 @@ git add css/style.css
  A  index.html
 
 A 的意思就是添加，也就是说你告诉 git，这些文件我要加到仓库里
+
 ![add.png](https://upload-images.jianshu.io/upload_images/6299738-f10a28c9f03feb2b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/440)
 
 9.使用 git commit -m "信息" 将你 add 过的内容「正式提交」到本地仓库（.git就是本地仓库），并添加一些注释信息，方便日后查阅
@@ -168,20 +173,27 @@ git commit . -m "添加了几个文件"
 
 ####2.文件变动
 1.我修改了css 当中的内容
+
 ![修改css.png](https://upload-images.jianshu.io/upload_images/6299738-dbcc27bcfe5ff3c2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/440)
 
-2. 运行 git status -sb 发现提示中有一个 M
+1. 运行 git status -sb 发现提示中有一个 M
+
 ![status.png](https://upload-images.jianshu.io/upload_images/6299738-f6ed8fdc836b59f5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/440)
-3. 此时你如果想让改动保存到仓库里，你需要先 git add css/style.css 或者也可以 git add .
-4. 再次运行 git status -sb 发现 M 有红色变成了绿色
+
+2. 此时你如果想让改动保存到仓库里，你需要先 git add css/style.css 或者也可以 git add .
+3. 再次运行 git status -sb 发现 M 有红色变成了绿色
+
 ![add.png](https://upload-images.jianshu.io/upload_images/6299738-add99b00fdcea83d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/440)
-5. 运行 git commit -m "更新 css/style.css"
+
+4. 运行 git commit -m "更新 css/style.css"
+ 
 ![commit.png](https://upload-images.jianshu.io/upload_images/6299738-5fa07651fd0f7c7e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/440)
 
 ####3.将本地仓库上传到 GitHub
 1. 在 GitHub 上新建一个空仓库，名称随意，一般可以跟本地目录名一致,创建的是git_learning
 
 2. 点击ssh,点击ssh,点击ssh,点击ssh,点击ssh,点击ssh
+
 ![git_learning.png](https://upload-images.jianshu.io/upload_images/6299738-7c76ebc3f1bff05e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/640)
 
 3:由于我们已经有本地仓库了，所以看图，图中下面半部分就是你需要的命令，我们一行一行拷贝过来执行
