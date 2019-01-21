@@ -30,30 +30,34 @@ GitHub 仓库下载到本地
 
 #### 五：帮助文档
 
-###一：版本管理系统的历史
+### 一：版本管理系统的历史
 --------------------- 
-#####阶段一：VCS 出现前 
+##### 阶段一：VCS 出现前 
 用目录拷贝区别不同版本，公共⽂文件容易被覆盖，成员沟通成本很高，代码集成效率低下
 
 ![VCS 出现前.png](https://upload-images.jianshu.io/upload_images/6299738-24a9ad81dc0f10e7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/140)
 
-#####阶段二：集中式 VCS
+##### 阶段二：集中式 VCS
 有集中的版本管理服务器，具备文件版本管理和分⽀管理能力，集成效率有明显地提高，但是客户端必须时刻和服务器相连
 
 ![集中式 VCS.png](https://upload-images.jianshu.io/upload_images/6299738-127ef386f52d0cc5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
 
-#####阶段三：分布式 VCS 
+##### 阶段三：分布式 VCS 
 服务端和客户端都有完整的版本库，脱离服务端，客户端照样可以管理理版本
 查看历史和版本⽐比较等多数操作，都不需 要访问服务器，⽐集中式 VCS 更更能提高版本管理效率
 
 ![分布式 VCS.png](https://upload-images.jianshu.io/upload_images/6299738-3905fa2345d89ee1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
 
 ### 二： git  简介 
+
 --------------------- 
+
 ##### 1. git作用
+
 世界上最先进的分布式版本控制系统。
 
 ##### 2 . git特点
+
 最优的存储能⼒
 非凡的性能
 开源的
@@ -62,10 +66,12 @@ GitHub 仓库下载到本地
 很容易定制工作流程
 
 ##### 3. git诞生
+
 Linux的创建者Linnus花费两周的时间完成的。
 
 
-#####4. Git的工作流程（看不懂，等我知道的时候重新更改信息）
+##### 4. Git的工作流程（看不懂，等我知道的时候重新更改信息）
+
 克隆 Git 资源作为工作目录。
 在克隆的资源上添加或修改文件。
 如果其他人修改了，你可以更新资源。
@@ -74,25 +80,26 @@ Linux的创建者Linnus花费两周的时间完成的。
 在修改完成后，如果发现错误，可以撤回提交并再次修改并提交。 
 
 ##### 5.工作区、暂存区和版本库（不太懂，以后会更改信息）
+
 工作区：就是你在电脑里能看到的目录。
 暂存区：英文叫stage, 或index。一般存放在 “.git目录下” 下的index文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。
 版本库：工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库
 
 ### 三：配置 Git和GitHub
 --------------------- 
-####1:安装Git
+#### 1:安装Git
 安装Git 详细参考网址：[安装Git](https://git-scm.com/book/zh/v2)
 
 GitBash下载
 百度网盘：链接: [https://pan.baidu.com/s/1nu99KWp](https://pan.baidu.com/s/1nu99KWp "null") 密码: jfdf
 
-####2:检查安装结果
+#### 2:检查安装结果
 输入以下命检查安装结果
 >git --version
 
 ![检查安装结果.png](https://upload-images.jianshu.io/upload_images/6299738-c014d9fa8a8b72c3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/440)
 
-####3:文件最小配置
+#### 3:文件最小配置
 >git config --global user.name 你的英文名                                                   #此英文名不需要跟GitHub账号保持一致
 git config --global user.email 你的邮箱                                                      #此邮箱不需要跟GitHub账号保持一致
 git config --global push.default matching
