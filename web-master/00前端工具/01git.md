@@ -7,43 +7,59 @@
 #### 一：版本管理系统的历史
 
 阶段一：VCS 出现前 
+
 阶段二：集中式 VCS
+
 阶段三：分布式 VCS 
 
 #### 二： Git  简介
 
 Git 作用
+
 Git 特点
+
 Git 诞生
 
 #### 三：Git
 
 安装Git
+
 检查安装结果
+
 Git文件最小配置
 
 #### 四：Git 使用
+
 建立本地Git 仓库课题 
+
 文件变动
+
 将本地仓库上传到 GitHub
+
 GitHub 仓库下载到本地
 
 #### 五：帮助文档
 
 ### 一：版本管理系统的历史
+
 --------------------- 
+
 ##### 阶段一：VCS 出现前 
+
 用目录拷贝区别不同版本，公共⽂文件容易被覆盖，成员沟通成本很高，代码集成效率低下
 
 ![VCS 出现前.png](https://upload-images.jianshu.io/upload_images/6299738-24a9ad81dc0f10e7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/140)
 
 ##### 阶段二：集中式 VCS
+
 有集中的版本管理服务器，具备文件版本管理和分⽀管理能力，集成效率有明显地提高，但是客户端必须时刻和服务器相连
 
 ![集中式 VCS.png](https://upload-images.jianshu.io/upload_images/6299738-127ef386f52d0cc5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
 
 ##### 阶段三：分布式 VCS 
+
 服务端和客户端都有完整的版本库，脱离服务端，客户端照样可以管理理版本
+
 查看历史和版本⽐比较等多数操作，都不需 要访问服务器，⽐集中式 VCS 更更能提高版本管理效率
 
 ![分布式 VCS.png](https://upload-images.jianshu.io/upload_images/6299738-3905fa2345d89ee1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
