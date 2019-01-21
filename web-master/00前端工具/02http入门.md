@@ -229,7 +229,7 @@ URL一般由三部组成：
 ③主机资源的具体地址。如目录和文件名等
 
 
-##### 如何使用 curl 命令
+##### 4:如何使用 curl 命令
 
 下载并保存到本地
 
@@ -241,7 +241,7 @@ curl -s -v -X POST -H "xxx:yyy" -d "1234567890" "https://www.baidu.com"
 
 以上含义：
 
-造一个到https://www.baidu.com的请求，
+构造一个到https://www.baidu.com的请求，
 
 请求方法是POST
 
