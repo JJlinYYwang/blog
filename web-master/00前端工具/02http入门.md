@@ -14,6 +14,8 @@
 
 URI和URL的区别
 
+如何使用 curl 命令
+
 
 ### 一：www 的历史
 
@@ -225,4 +227,27 @@ URL一般由三部组成：
 ②存有该资源的主机IP地址(有时也包括端口号)
 
 ③主机资源的具体地址。如目录和文件名等
+
+
+##### 如何使用 curl 命令
+
+下载并保存到本地
+
+curl https://github.com/yztldxdzhu/blog/blob/master/node-server.js > ./node-server.js
+
+查看请求
+
+curl -s -v -X POST -H "xxx:yyy" -d "1234567890" "https://www.baidu.com"
+
+以上含义：
+
+造一个到https://www.baidu.com的请求，
+
+请求方法是POST
+
+请求数据是1234567890
+
+请求头新增"xxx:yyy"
+
+查看该请求所有请求响应信息
 
